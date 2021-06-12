@@ -33,14 +33,20 @@ public class CustomArrayList<T> implements CustomList<T> {
 
 	@Override
 	public int getSize() {
-		return items.length;
+		int listSize = 0;
+		for(int i = 0; i<items.length; i++) {
+			if(items[i] != null) {
+				listSize++;
+			}
+		}
+		return listSize;
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public T get(int index) {
-		String currentObject = (String) items[index];
-		return (T) currentObject;
+		T currentObject = (T) items[index];
+		return currentObject;
 	}
 
 }

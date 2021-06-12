@@ -3,7 +3,7 @@ package com.coderscampus.arraylist;
 public class CustomListApplication {
 
 	public static void main(String[] args) {
-		CustomList<String> myCustomList = new CustomArrayList<>();
+		CustomList<Object> myCustomList = new CustomArrayList<>();
 		//Alter this number for how many elements you want to add to array
 		final int elementAmount = 23;
 		
